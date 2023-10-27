@@ -132,3 +132,30 @@ body {
     border-bottom: 0.5em solid transparent;
     border-left: 1em solid #401d03;
   }
+  .shadow {
+    margin: 10% auto 0;
+    background: #000;
+    width: 230px;
+    height: 50px;
+    border-radius: 50%;
+    animation: zoom 3s infinite;
+  }
+  @keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10%);
+    }
+  }
+
+  @keyframes zoom {
+      0%, 100% {
+          transform: scale(1);
+      }
+
+      50% {
+          transform: scale(0.8);
+      }
+  }
