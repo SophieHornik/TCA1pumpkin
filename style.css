@@ -25,3 +25,25 @@ body {
     z-index: 1;
     animation: float 3s infinite;
 }
+.pumpkin .texture {
+    height: 10.8em;
+    width: 6.5em;
+    position: absolute;
+    bottom: -0.4em;
+    left: 4em;
+    border-radius: 70%/130%;
+    border-bottom: 0.5em solid #a14907;
+    border-top: 0.5em solid #a14907;
+  }
+  .pumpkin .texture:after {
+    content: "";
+    display: block;
+    height: 10.7em;
+    width: 12em;
+    position: absolute;
+    bottom: -0.4em;
+    left: -2.5em;
+    border-radius: 70%/130%;
+    border-bottom: 0.5em solid #a14907;
+    border-top: 0.5em solid #a14907;
+  }
