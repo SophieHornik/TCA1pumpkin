@@ -2,11 +2,12 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at center, #160909 0%,#160909 45%,#291111 100%);
+    background: radial-gradient(ellipse at center, #b3831b 0%,#413939 45%,#291111 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    
 }
 .container {
     display: flex;
@@ -72,6 +73,7 @@ body {
     transform: rotate(30deg);
     border-bottom: 2.1em solid transparent;
     border-left: 2.4em solid #401d03;
+    animation: candle 5s infinite;
   }
 
   .pumpkin .eye.left {
@@ -79,6 +81,7 @@ body {
     transform: rotate(-30deg);
     border-bottom: 2.1em solid transparent;
     border-right: 2.4em solid #401d03;
+    animation: candle2 5s infinite;
   }
   .pumpkin .mouth {
     width: 4em;
@@ -86,6 +89,7 @@ body {
     position: absolute;
     bottom: 1.5em;
     border-bottom: 1em solid #401d03;
+    animation: candle3 5s infinite;
   }
 
   .pumpkin .mouth.right {
@@ -106,6 +110,8 @@ body {
     border-top: 0.8em solid transparent;
     border-bottom: 0em solid transparent;
     border-left: 0.8em solid #401d03;
+    animation: candle4 5s infinite;
+    
   }
 
   .pumpkin .teeth:before, .pumpkin .teeth:after {
@@ -123,6 +129,7 @@ body {
     transform: rotate(30deg);
     border-bottom: 0.5em solid transparent;
     border-left: 1em solid #401d03;
+    animation: candle5 5s infinite;
   }
 
   .pumpkin .teeth:after {
@@ -131,6 +138,7 @@ body {
     transform: rotate(30deg);
     border-bottom: 0.5em solid transparent;
     border-left: 1em solid #401d03;
+    animation: candle6 5s infinite;
   }
   .shadow {
     margin: 10% auto 0;
@@ -158,4 +166,42 @@ body {
       50% {
           transform: scale(0.8);
       }
+  }
+
+  @keyframes candle {
+    10% {border-left:2.4em solid#401d03;}
+    50% {border-left: 2.4em solid#8d450d}
+    90% {border-left: 2.4em solid#c9b769}
+    100% {border-left:2.4em solid#401d03;}
+  }
+  @keyframes candle2 {
+    10% {border-right:2.4em solid#401d03;}
+    50% {border-right: 2.4em solid#8d450d}
+    90% {border-right: 2.4em solid#c9b769}
+    100% {border-right:2.4em solid#401d03;}
+  }
+  @keyframes candle3 {
+    10% {border-bottom: 1em solid#401d03;}
+    50% {border-bottom: 1em solid#8d450d}
+    90% {border-bottom: 1em solid#c9b769}
+    100% {border-bottom: 1em solid#401d03;}
+  }
+
+@keyframes candle4 {
+  10% {border-left: 0.8em solid#401d03;}
+  50% {border-left: 0.8em solid#8d450d}
+  90% {border-left: 0.8em solid#c9b769}
+  100% {border-left:0.8em solid#401d03}
+}
+  @keyframes candle5 {
+    10% {border-left: 1em solid #401d03;}
+    50% {border-left: 1em solid #8d450d}
+    90% {border-left: 1em solid #c9b769}
+    100% {border-left:1em solid #401d03}
+  }
+  @keyframes candle6 {
+    10% {border-left:1em solid#401d03;}
+    50% {border-left: 1em solid#8d450d}
+    90% {border-left: 1em solid#c9b769}
+    100% {border-left:1em solid#401d03}
   }
